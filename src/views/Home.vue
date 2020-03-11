@@ -36,8 +36,7 @@ export default {
     setTrainingData() {
       db.collection("trainings")
         .doc("zkc8tGZxed90LvxpRhUc")
-        .update({ isHappening: this.green })
-        .then(console.log("Updated"));
+        .update({ isHappening: this.green });
     },
     toggle: function() {
       this.green = !this.green;
