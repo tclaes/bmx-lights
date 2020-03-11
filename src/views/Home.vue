@@ -2,7 +2,6 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/icon-512x512.png" width="120px" />
     <Lights v-if="!isLoading" :isGreen="green" />
-    <button v-if="loggedIn" v-on:click="toggle">Toggle</button>
   </div>
 </template>
 
@@ -17,7 +16,6 @@ export default {
   data: function() {
     return {
       green: null,
-      loggedIn: true,
       weather: null,
       rain: null,
       isLoading: true,
