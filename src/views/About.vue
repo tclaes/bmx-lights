@@ -10,7 +10,7 @@ import axios from "axios";
 import Lights from "@/components/Lights.vue";
 
 const API =
-  "http://api.openweathermap.org/data/2.5/forecast?q=zonhoven&appid=c01303e2175e5909a94505ad5a392dff";
+  "https://api.openweathermap.org/data/2.5/forecast?q=zonhoven&appid=c01303e2175e5909a94505ad5a392dff";
 
 export default {
   name: "About",
