@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>Weather</h1>
+    <h1>Will it rain?</h1>
     <Lights v-if="weather" :isGreen="!rain" />
   </div>
 </template>
