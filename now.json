@@ -1,0 +1,9 @@
+{
+  "build": {
+    "env": {
+      "VUE_APP_FIREBASE_API_KEY": "@vue_app_firebase_api_key",
+      "VUE_APP_FIREBASE_AUTH_DOMAIN": "@vue_app_firebase_auth_domain",
+      "VUE_APP_FIREBASE_PROJECT_ID": "@vue_app_firebase_project_id"
+    }
+  }
+}
