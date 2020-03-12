@@ -1,5 +1,8 @@
 <template>
   <div class="login">
+
+    <h1 v-if="user">Welkom {{ user }}</h1>
+
     <button @click="signInWithGoogle()">Google signin</button>
     <button @click="signInWithEmail()">Email signin</button>
   </div>
@@ -29,6 +32,10 @@ export default {
     ) {
       auth
         .signInWithEmailAndPassword(email, password)
+        .then(res => {
+          console.log(res);
+          this.user = res.user;
+        })
         .catch(err => console.error(err));
     }
   }
