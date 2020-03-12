@@ -7,6 +7,7 @@
 <script>
 import firebase from "firebase/app";
 import "firebase/auth";
+import { auth } from "../db";
 
 export default {
   data: function() {
@@ -17,13 +18,9 @@ export default {
   methods: {
     signInWithGoogle: function() {
       const provider = new firebase.auth.GoogleAuthProvider();
-      firebase
-        .auth()
-        .signInWithRedirect(provider)
-        .then(res => {
-          this.user = res.user;
-          console.log(this.user);
-        });
+      auth.signInWithRedirect(provider).then(res => {
+        this.user = res.user;
+      });
     }
   }
 };

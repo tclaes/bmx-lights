@@ -4,8 +4,8 @@ import "firebase/auth";
 
 // Get a Firestore instance
 const fb = firebase.initializeApp({
-  apiKey: "AIzaSyB6ioxDkdHrTHw4-ctNKg54wPS0RTI_moc",
-  authDomain: "bmx-lights.tclaes.now.sh",
+  apiKey: "",
+  authDomain: "bmx-tracks.firebaseapp.com",
   projectId: "bmx-tracks"
 });
 
